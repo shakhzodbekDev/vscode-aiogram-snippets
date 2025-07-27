@@ -1,0 +1,41 @@
+{
+    "publisher": "Shakhzodbek",
+    "name": "vscode-aiogram-snippets",
+    "displayName": "Aiogram Snippets",
+    "version": "1.0.0",
+    "description": "VS Code snippets for Python Telegram bots using Aiogram",
+    "keywords": [
+        "aiogram",
+        "telegram",
+        "bot",
+        "python",
+        "snippets",
+        "vscode",
+        "vscode-extension"
+    ],
+    "homepage": "https://github.com/shakhzodbekDev/vscode-aiogram-snippets#readme",
+    "bugs": {
+        "url": "https://github.com/shakhzodbekDev/vscode-aiogram-snippets/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shakhzodbekDev/vscode-aiogram-snippets.git"
+    },
+    "license": "MIT",
+    "author": "Shakhzodbek",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "icon": "favicon.ico",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

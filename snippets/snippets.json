@@ -1,0 +1,92 @@
+{
+    "Aiogram Router Import": {
+        "prefix": "router",
+        "body": [
+            "from typing import Final",
+            "",
+            "from aiogram import Router",
+            "from aiogram.types import Message, CallbackQuery",
+            "",
+            "",
+            "router: Final[Router] = Router(name=__name__)",
+            "",
+            "$1"
+        ],
+        "description": "Import and create an Aiogram Router with Final typing"
+    },
+    "Command Filter Handler": {
+        "prefix": "ch",
+        "body": [
+            "@router.message(Command(\"$1\"))",
+            "async def $2(message: Message):",
+            "    $3"
+        ],
+        "description": "Aiogram handler with Command filter"
+    },
+    "Message Text Equals Handler": {
+        "prefix": "mh",
+        "body": [
+            "@router.message(F.text == \"$1\")",
+            "async def $2(message: Message):",
+            "    $3"
+        ],
+        "description": "Aiogram message handler with text equals filter"
+    },
+    "Callback Query Equals Handler": {
+        "prefix": "cqh",
+        "body": [
+            "@router.callback_query(F.data == \"$1\")",
+            "async def $2(call: CallbackQuery):",
+            "    $3"
+        ],
+        "description": "Aiogram callback query handler with data equals filter"
+    },
+    "FSM State Handler": {
+        "prefix": "fsmh",
+        "body": [
+            "@router.message(StateFilter(\"$1\"))",
+            "async def $2(message: Message, state: FSMContext):",
+            "    $3"
+        ],
+        "description": "Aiogram FSMContext message handler"
+    },
+    "Base Middleware": {
+        "prefix": "mw",
+        "body": [
+            "from aiogram import BaseMiddleware",
+            "",
+            "",
+            "class $1(BaseMiddleware):",
+            "    async def __call__(self, handler, event, data):",
+            "        $2"
+        ],
+        "description": "Aiogram BaseMiddleware class template"
+    },
+    "States Group": {
+        "prefix": "sg",
+        "body": [
+            "from aiogram.fsm.state import StatesGroup, State",
+            "",
+            "",
+            "class $1(StatesGroup):",
+            "    $2 = State()"
+        ],
+        "description": "Aiogram FSM StatesGroup template"
+    },
+    "Custom Filter With Args": {
+        "prefix": "cf",
+        "body": [
+            "from aiogram.filters import BaseFilter",
+            "from aiogram.types import Message",
+            "",
+            "",
+            "class $1(BaseFilter):",
+            "    def __init__(self, $2):",
+            "        self.$2 = $2",
+            "",
+            "    async def __call__(self, message: Message) -> bool:",
+            "        return $3"
+        ],
+        "description": "Custom Aiogram filter class with constructor"
+    }
+}
