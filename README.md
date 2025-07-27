@@ -2,9 +2,9 @@
 ## VS Code Snippets for Aiogram
 -------------------
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/shakhzodbek.vscode-aiogram-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=shakhzodbek.vscode-aiogram-snippets)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/shakhzodbek.vscode-aiogram-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=shakhzodbek.vscode-aiogram-snippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/shakhzodbek.vscode-aiogram-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=shakhzodbek.vscode-aiogram-snippets)
+[Version](https://marketplace.visualstudio.com/items?itemName=shakhzodbek.vscode-aiogram-snippets)
+[Installs](https://marketplace.visualstudio.com/items?itemName=shakhzodbek.vscode-aiogram-snippets)
+[Ratings](https://marketplace.visualstudio.com/items?itemName=shakhzodbek.vscode-aiogram-snippets)
 
 This extension contains **code snippets for [Aiogram](https://docs.aiogram.dev/)** to help you quickly scaffold handlers, routers, filters, FSM and middleware in your Python Telegram bots using [VS Code](https://code.visualstudio.com/).
 
